@@ -1,0 +1,66 @@
+@startuml Diagrama_de_Clases
+
+class Cliente {
+  + id_cliente: int
+  + nombre: str
+  + razon_social: str
+  + dni: str
+  + domicilio: str
+  + telefono: str
+  + email: str
+  + registrar_cliente()
+}
+
+class Equipo {
+  + id_equipo: int
+  + nombre: str
+  + ubicacion: str
+  + estado: str
+  + modelo: str
+  + marca: str
+  + registrar_equipo()
+  + visualizar_ficha()
+}
+
+class OrdenTrabajo {
+  + id_organizacion: int
+  + descripcion: str
+  + estado: str
+  + fecha: date
+  + responsable: str
+  + registrar_orden()
+  + modificar_orden()
+  + eliminar_orden()
+}
+
+class HistorialMantenimiento {
+  + id_historial: int
+  + fecha: date
+  + tipo_intervencion: str
+  + responsable: str
+  + agregar_intervencion()
+}
+
+class Repuesto {
+  + id_repuesto: int
+  + descripcion: str
+  + id_equipo: int
+  + registrar_repuesto()
+}
+
+class BalanceSemestral {
+  + id_balance: int
+  + fecha_inicio: date
+  + fecha_fin: date
+  + recurrencia: str
+  + generar_balance()
+}
+
+' Relaciones entre clases
+Cliente "1" -- "0..*" Equipo
+Equipo "1" -- "0..*" HistorialMantenimiento
+Equipo "1" -- "0..*" Repuesto
+OrdenTrabajo "1" -- "1..*" Equipo
+OrdenTrabajo "1" -- "0..*" HistorialMantenimiento
+
+@enduml
