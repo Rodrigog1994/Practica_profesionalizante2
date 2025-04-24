@@ -1,0 +1,26 @@
+@startuml
+start
+:Iniciar registro de orden de trabajo;
+
+:Registrar orden de trabajo;
+:Consultar orden de trabajo;
+:Solicitar ver ordenes de trabajo;
+:Mostrar lista de ordenes de trabajo;
+
+if (¿Se solicita modificar orden de trabajo?) then (Si)
+  :Seleccionar una orden a modificar;
+  :Modificar datos;
+  :Guardar informacion;
+else (No)
+  :Ingresar datos de la orden;
+  :Registrar detalle de orden de trabajo;
+endif
+
+if (¿Se solicita eliminar orden de trabajo?) then (Si)
+  :Seleccionar orden a eliminar;
+  :Eliminar orden;
+  :Guardar cambios;
+endif
+
+stop
+@enduml
