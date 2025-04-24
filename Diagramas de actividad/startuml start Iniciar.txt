@@ -1,0 +1,17 @@
+@startuml
+start
+:Iniciar registro de equipo;
+fork
+  :Registrar ubicacion;
+  :Registrar modelo;
+  :Registrar marca;
+fork again
+  :¿Se ingresaron los datos correctamente?;
+  if (Datos correctos?) then (no)
+      :Mostrar mensaje de error;
+  else (si)
+      :Guardar equipo en la base de datos;
+  endif
+end fork
+stop
+@enduml
