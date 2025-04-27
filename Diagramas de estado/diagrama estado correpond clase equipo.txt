@@ -1,0 +1,14 @@
+
+@startuml
+start
+:Equipo registrado;
+fork
+  :Equipo en uso;
+  :Equipo falla;
+  :Equipo retirado;
+  :Equipo en mantenimiento;
+  :Equipo en reparacion;
+  :Equipo reparado;
+end fork
+stop
+@enduml
