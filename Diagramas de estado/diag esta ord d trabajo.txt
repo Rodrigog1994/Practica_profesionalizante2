@@ -1,0 +1,9 @@
+@startuml
+start
+:Orden creada;
+:Orden asignada;
+:Orden en proceso;
+:Orden finalizada;
+stop
+@enduml
+
