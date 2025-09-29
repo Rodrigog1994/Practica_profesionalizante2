@@ -25,6 +25,8 @@
 
 5. El usuario hace clic en "Guardar".
 
+6. El sistema despliega una ventana de  usuario guardado.
+
 **Flujo Alternativo**
 
 3-1. El sistema valida los datos y:
