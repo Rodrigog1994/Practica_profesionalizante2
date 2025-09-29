@@ -1,23 +1,30 @@
-Caso de Uso: Consultar Cliente
+# Caso de Uso: Consultar Cliente
 
-Sección	Descripción
+## Actor Primario
+Usuario registrado
 
-Actor principal	Usuario registrado
+## Precondición
+El usuario debe estar logueado.
 
-Precondición	El usuario debe estar logueado.
+## Requerimientos
+- RF01
 
-Requisitos	RF01
-
-Normativa	
-
+## Flujo Normal
 1. El sistema muestra una ventana con una lista de clientes y diferentes opciones.
+2. El usuario hace clic en la opción **"Consultar Cliente"**.
+3. El sistema abre una ventana con un formulario de consulta de cliente, donde puede buscar por CUIT o Razón Social y visualizar los datos del cliente:
+   - Razón Social  
+   - CUIT  
+   - Domicilio  
+   - Teléfono  
+   - Mail  
+4. El usuario ingresa el CUIT o Razón Social y hace clic en **"Buscar"**.
+5. El sistema busca los datos del cliente en la base de datos y los devuelve en pantalla.
 
-2. El usuario hace clic en la opción "consultar cliente".
+## Flujo Alternativo
+- **5-A. Cliente no encontrado:**  
+  El sistema indica que no se encontraron resultados y muestra un mensaje de error:  
+  *"Vuelve a ingresar los datos"*.
 
-3. El sistema abre una ventana con un formulario de consulta de cliente, donde puede buscar por cuit o razón social y visualizar los datos del cliente como razón social, cuit, domicilio, teléfono y mail.
-
-4. El usuario ingresa el cuit o razón social y hace clic en "buscar".
-  - 5.1: El sistema busca los datos del cliente en la base de datos y los devuelve en pantalla.
-  - Alternativa 5.1: El sistema indica que no se encontraron resultados y muestra un mensaje de error: "Vuelve a ingresar los datos".
-
-Postcondiciones
+## Postcondiciones
+- El usuario obtiene la información del cliente o recibe un mensaje de error en caso de no hallarlo.
