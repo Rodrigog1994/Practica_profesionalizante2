@@ -1,25 +1,25 @@
 # Caso de Uso: Eliminar Cliente
 
-**Actor:** Usuario
+## Actor Primario
+Usuario logueado
 
-**Precondiciones:** Usuario Logueado
+## Precondición
+El usuario debe estar logueado.
 
-**Requerimientos:** RF01
+## Requerimientos
+- RF01
 
-**Normal**
-
+## Flujo Normal
 1. El sistema muestra una ventana con un listado de clientes y diferentes opciones.
-
-2. El usuario hace clic en la opción "Eliminar Cliente" de un cliente determinado.
-
+2. El usuario hace clic en la opción **"Eliminar Cliente"** de un cliente determinado.
 3. El sistema despliega un mensaje de confirmación preguntando si está seguro de eliminar el cliente.
-
-4. El usuario hace clic en "Confirmar".
-
+4. El usuario hace clic en **"Confirmar"**.
 5. El sistema elimina al cliente.
 
-**Alternativo**
+## Flujo Alternativo
+- **4-A. Cancelación:**  
+  El usuario hace clic en **"No Confirmar"**.  
+  → El sistema retorna al paso 2.
 
-4-1. El usuario hace clic en "No Confirmar". Volver al paso 2.
-
-**Postcondiciones:** El cliente fue eliminado 
+## Postcondiciones
+- El cliente queda eliminado de la base de datos.
