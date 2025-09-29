@@ -14,6 +14,8 @@
 
 4. El usuario modifica los datos y hace click en "confirmar".<br> 
 
+5. Los datos del cliente quedan modificados en la base de datos.<br>
+
 - **5.1:** El sistema valida los datos y, en caso de estar correctos, confirma los cambios y guarda la información.<br>
 
 - **Alternativo 5.1:** El sistema indica que los datos no son correctos y muestra un mensaje de error: "Vuelve a ingresar los datos". 
