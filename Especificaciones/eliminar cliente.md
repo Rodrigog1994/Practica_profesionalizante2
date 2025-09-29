@@ -16,10 +16,10 @@
 
 4. El usuario hace clic en "Confirmar".
 
-5. El cliente queda eliminado de la base de datos.
+5. El sistema elimina al cliente.
 
 **Alternativo**
 
 4-1. El usuario hace clic en "No Confirmar". Volver al paso 2.
 
-**Postcondiciones:** 
+**Postcondiciones:** El cliente fue eliminado 
