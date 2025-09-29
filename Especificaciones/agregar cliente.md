@@ -25,7 +25,7 @@
 
 5. El usuario hace clic en "Guardar".
 
-6. El sistema despliega una ventana de  usuario guardado.
+6. El cliente se guarda en la base de datos.
 
 **Flujo Alternativo**
 
