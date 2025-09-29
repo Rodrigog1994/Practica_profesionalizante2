@@ -30,4 +30,4 @@
 3-1. El sistema valida los datos y:
    - Si encuentra datos erróneos o incompletos (campos obligatorios, tipos de datos, longitud), informa al usuario y no permite avanzar hasta que se corrijan.
 
-**Postcondiciones:** Un nuevo usuario ha sido agregado.
+**Postcondiciones:** 
