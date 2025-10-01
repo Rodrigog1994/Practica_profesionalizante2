@@ -18,10 +18,23 @@ El usuario debe estar logueado.
 
 ## Flujo Alternativo
 - **5-A. Validación de Datos:**  
-  El sistema valida los datos.  
-  - Si son correctos, confirma y guarda la información.  
-  - Si no son correctos, muestra un mensaje de error:  
-    *"Vuelve a ingresar los datos"*.
+  1. El sistema valida los datos ingresados en el formulario antes de guardar:  
+     - Verifica que **Razón Social** no esté vacía.  
+     - Verifica que el **CUIT** tenga el formato correcto (11 dígitos, sin letras).  
+     - Verifica que los campos obligatorios estén completos.  
+     - Opcional: verifica que no exista ya otro cliente con el mismo CUIT.  
+
+  2. **Si los datos son correctos**:  
+     - El sistema confirma la validez.  
+     - Retoma el **flujo normal**, guardando las modificaciones en la base de datos.  
+
+  3. **Si los datos no son correctos**:  
+     - El sistema interrumpe la operación y muestra mensajes de error específicos en pantalla, por ejemplo:  
+       - "El campo Razón Social es obligatorio."  
+       - "El CUIT ingresado no es válido. Debe tener 11 dígitos."  
+       - "El correo electrónico no tiene un formato válido."  
+     - El usuario puede corregir los datos y volver a intentar la confirmación sin perder la información previamente cargada.
 
 ## Postcondiciones
 - El cliente queda actualizado en la base de datos.
+
