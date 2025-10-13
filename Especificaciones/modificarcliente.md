@@ -24,9 +24,7 @@ El usuario debe estar logueado.
      - Verifica que los campos obligatorios estén completos.  
      - Opcional: verifica que no exista ya otro cliente con el mismo CUIT.  
 
-  2. **Si los datos son correctos**:  
-     - El sistema confirma la validez.  
-     - Retoma el **flujo normal**, guardando las modificaciones en la base de datos.  
+    
 
   3. **Si los datos no son correctos**:  
      - El sistema interrumpe la operación y muestra mensajes de error específicos en pantalla, por ejemplo:  
