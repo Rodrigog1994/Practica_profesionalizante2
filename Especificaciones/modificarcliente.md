@@ -27,7 +27,7 @@ El usuario debe estar logueado.
     
 
   3. **Si los datos no son correctos**:  
-     - El sistema interrumpe la operación y muestra mensajes de error específicos en pantalla, por ejemplo:  
+     - El sistema muestra mensaje de error:  
        - "El campo Razón Social es obligatorio."  
        - "El CUIT ingresado no es válido. Debe tener 11 dígitos."  
        - "El correo electrónico no tiene un formato válido."  
