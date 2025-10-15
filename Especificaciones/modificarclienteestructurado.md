@@ -8,13 +8,13 @@
 
 ## 2. Flujo Normal
 2.1. El sistema muestra una ventana con una lista de clientes y diferentes opciones.  
-2.2. El usuario busca por Razón Social o CUIT, selecciona el cliente y hace clic en la opción "Modificar Cliente".  
-2.3. El sistema despliega una ventana con los datos precargados del cliente, permitiendo modificarlos.  
-2.4. El usuario modifica los datos y hace clic en "Confirmar".  
-2.5. Los datos del cliente quedan modificados en la base de datos.
+2.2. El usuario busca por Razón Social o CUIT, selecciona el cliente y  accede a  "Modificar Cliente".  
+2.3. El sistema despliega una ventana con los datos precargados del cliente.  
+2.4. El usuario modifica los datos y confirma.  
+2.5. Los datos del cliente quedan guardados.
 
 ## 3. Flujos Alternativos
-3.1. 5-A. Validación de Datos  
+3.1.  Validación de Datos  
 3.1.1. El sistema valida los datos ingresados en el formulario antes de guardar:  
 - Verifica que Razón Social no esté vacía.  
 - Verifica que el CUIT tenga el formato correcto (11 dígitos, sin letras).  
